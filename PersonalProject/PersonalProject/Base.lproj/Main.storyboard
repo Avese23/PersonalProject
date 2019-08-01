@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="0Tu-n6-gAY">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DataBasestableViewCell" id="0Tu-n6-gAY" customClass="DataBasesTableViewCell" customModule="PersonalProject" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Tu-n6-gAY" id="tbV-Jn-f5H">
@@ -36,11 +36,17 @@
                             <outlet property="delegate" destination="FJq-Sv-siI" id="sly-ly-bAt"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Your Data Base" id="Oq5-iV-SzE"/>
+                    <navigationItem key="navigationItem" title="Your Data Base" id="Oq5-iV-SzE">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="QSK-aO-ZyR">
+                            <connections>
+                                <segue destination="7qb-VQ-K85" kind="show" id="Y1X-zZ-d1e"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDE-n3-JkN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1184.8" y="-248.72563718140933"/>
+            <point key="canvasLocation" x="991" y="-249"/>
         </scene>
         <!--Characters-->
         <scene sceneID="zcK-wN-DgR">
@@ -76,6 +82,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MfU-z6-cgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1855.2" y="-252.32383808095955"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TYw-I2-bxn">
+            <objects>
+                <viewController id="7qb-VQ-K85" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9NA-5k-zV4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c1O-fs-ha6">
+                                <rect key="frame" x="53" y="142" width="262" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="NameThouDataBase:" destination="hmc-YU-Vpv" eventType="editingDidEnd" id="9xg-TK-DiY"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name your Database" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7w-4r-yCe">
+                                <rect key="frame" x="107" y="96" width="161" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6GG-RZ-F7J">
+                                <rect key="frame" x="170" y="571" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="SaveDataBase:" destination="hmc-YU-Vpv" eventType="touchUpInside" id="QMi-kM-liy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OlA-vE-xca"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SFC-rg-1It" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="hmc-YU-Vpv" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1293.5999999999999" y="421.43928035982015"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dib-2o-hCN">

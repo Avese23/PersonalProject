@@ -15,6 +15,9 @@
 		18E0140622F2137800762728 /* PersonalProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E0140522F2137800762728 /* PersonalProjectTests.swift */; };
 		18E0141122F2137800762728 /* PersonalProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E0141022F2137800762728 /* PersonalProjectUITests.swift */; };
 		18E0141F22F22A8E00762728 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E0141E22F22A8E00762728 /* TableViewController.swift */; };
+		18E0142122F31B9300762728 /* Your Data Bases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E0142022F31B9300762728 /* Your Data Bases.swift */; };
+		18E0142322F31CF400762728 /* DataBasesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E0142222F31CF400762728 /* DataBasesTableViewCell.swift */; };
+		18E0142522F31F6F00762728 /* NameDatabaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E0142422F31F6F00762728 /* NameDatabaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		18E0141022F2137800762728 /* PersonalProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalProjectUITests.swift; sourceTree = "<group>"; };
 		18E0141222F2137800762728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18E0141E22F22A8E00762728 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		18E0142022F31B9300762728 /* Your Data Bases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Your Data Bases.swift"; sourceTree = "<group>"; };
+		18E0142222F31CF400762728 /* DataBasesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBasesTableViewCell.swift; sourceTree = "<group>"; };
+		18E0142422F31F6F00762728 /* NameDatabaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameDatabaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 			children = (
 				18E013ED22F2137600762728 /* AppDelegate.swift */,
 				18E013F122F2137600762728 /* Main.storyboard */,
+				18E0142422F31F6F00762728 /* NameDatabaseViewController.swift */,
+				18E0142222F31CF400762728 /* DataBasesTableViewCell.swift */,
+				18E0142022F31B9300762728 /* Your Data Bases.swift */,
 				18E013F722F2137800762728 /* Assets.xcassets */,
 				18E013F922F2137800762728 /* LaunchScreen.storyboard */,
 				18E013FC22F2137800762728 /* Info.plist */,
@@ -259,9 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E0142522F31F6F00762728 /* NameDatabaseViewController.swift in Sources */,
+				18E0142322F31CF400762728 /* DataBasesTableViewCell.swift in Sources */,
 				18E013F622F2137600762728 /* PersonalProject.xcdatamodeld in Sources */,
 				18E0141F22F22A8E00762728 /* TableViewController.swift in Sources */,
 				18E013EE22F2137600762728 /* AppDelegate.swift in Sources */,
+				18E0142122F31B9300762728 /* Your Data Bases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
